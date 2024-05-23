@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		6F4CA8F32BFDEA5000625DC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CA8F22BFDEA5000625DC9 /* AppDelegate.swift */; };
 		6F4CA8F52BFDEA5000625DC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CA8F42BFDEA5000625DC9 /* SceneDelegate.swift */; };
-		6F4CA8F72BFDEA5000625DC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CA8F62BFDEA5000625DC9 /* ViewController.swift */; };
+		6F4CA8F72BFDEA5000625DC9 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CA8F62BFDEA5000625DC9 /* UserInfoViewController.swift */; };
 		6F4CA8FC2BFDEA5100625DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4CA8FB2BFDEA5100625DC9 /* Assets.xcassets */; };
 		6F4CA8FF2BFDEA5100625DC9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6F4CA8FE2BFDEA5100625DC9 /* Base */; };
-		6F4CA9072BFE24CF00625DC9 /* YS Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F4CA9062BFE24CF00625DC9 /* YS Display-Medium.ttf */; };
 		6F4CA90A2BFE8D5900625DC9 /* YS Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F4CA9092BFE250900625DC9 /* YS Display-Medium.ttf */; };
+		6F4CA90D2BFF251600625DC9 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CA90C2BFF251600625DC9 /* UsersListViewController.swift */; };
+		6F4CA9112BFF288C00625DC9 /* UIColor extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CA9102BFF288C00625DC9 /* UIColor extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6F4CA8EF2BFDEA5000625DC9 /* OTUS_14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUS_14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F4CA8F22BFDEA5000625DC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F4CA8F42BFDEA5000625DC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F4CA8F62BFDEA5000625DC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F4CA8F62BFDEA5000625DC9 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		6F4CA8FB2BFDEA5100625DC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F4CA8FE2BFDEA5100625DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F4CA9002BFDEA5100625DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F4CA9062BFE24CF00625DC9 /* YS Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YS Display-Medium.ttf"; path = "../../../../../../Downloads/MovieQuizFonts/YS Display-Medium.ttf"; sourceTree = "<group>"; };
 		6F4CA9092BFE250900625DC9 /* YS Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Medium.ttf"; sourceTree = "<group>"; };
+		6F4CA90C2BFF251600625DC9 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		6F4CA9102BFF288C00625DC9 /* UIColor extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,13 @@
 		6F4CA8F12BFDEA5000625DC9 /* OTUS_14 */ = {
 			isa = PBXGroup;
 			children = (
+				6F4CA90F2BFF287300625DC9 /* Helpers */,
+				6F4CA90E2BFF251F00625DC9 /* ViewControllers */,
 				6F4CA8F22BFDEA5000625DC9 /* AppDelegate.swift */,
 				6F4CA8F42BFDEA5000625DC9 /* SceneDelegate.swift */,
-				6F4CA8F62BFDEA5000625DC9 /* ViewController.swift */,
 				6F4CA9082BFE24F900625DC9 /* Resources */,
 				6F4CA8FD2BFDEA5100625DC9 /* LaunchScreen.storyboard */,
 				6F4CA9002BFDEA5100625DC9 /* Info.plist */,
-				6F4CA9062BFE24CF00625DC9 /* YS Display-Medium.ttf */,
 			);
 			path = OTUS_14;
 			sourceTree = "<group>";
@@ -72,10 +74,35 @@
 		6F4CA9082BFE24F900625DC9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6F4CA90B2BFE8DF400625DC9 /* Fonts */,
 				6F4CA8FB2BFDEA5100625DC9 /* Assets.xcassets */,
-				6F4CA9092BFE250900625DC9 /* YS Display-Medium.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		6F4CA90B2BFE8DF400625DC9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6F4CA9092BFE250900625DC9 /* YS Display-Medium.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		6F4CA90E2BFF251F00625DC9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F4CA90C2BFF251600625DC9 /* UsersListViewController.swift */,
+				6F4CA8F62BFDEA5000625DC9 /* UserInfoViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6F4CA90F2BFF287300625DC9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6F4CA9102BFF288C00625DC9 /* UIColor extension.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +165,6 @@
 			files = (
 				6F4CA8FC2BFDEA5100625DC9 /* Assets.xcassets in Resources */,
 				6F4CA90A2BFE8D5900625DC9 /* YS Display-Medium.ttf in Resources */,
-				6F4CA9072BFE24CF00625DC9 /* YS Display-Medium.ttf in Resources */,
 				6F4CA8FF2BFDEA5100625DC9 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F4CA8F72BFDEA5000625DC9 /* ViewController.swift in Sources */,
+				6F4CA9112BFF288C00625DC9 /* UIColor extension.swift in Sources */,
+				6F4CA8F72BFDEA5000625DC9 /* UserInfoViewController.swift in Sources */,
+				6F4CA90D2BFF251600625DC9 /* UsersListViewController.swift in Sources */,
 				6F4CA8F32BFDEA5000625DC9 /* AppDelegate.swift in Sources */,
 				6F4CA8F52BFDEA5000625DC9 /* SceneDelegate.swift in Sources */,
 			);

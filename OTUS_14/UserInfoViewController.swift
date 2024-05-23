@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewController: UIViewController {
+final class UserInfoViewController: UIViewController {
     
     // MARK: - UI Elements
     private lazy var mainStackView: UIStackView = {
@@ -130,7 +130,7 @@ final class ViewController: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "backgroundColor") ?? UIColor.darkGray
+        view.backgroundColor = .bgColor
         setupViews()
         setupConstraints()
         initialHideDetails()
@@ -169,7 +169,7 @@ final class ViewController: UIViewController {
 // MARK: - Setup
 
 
-extension ViewController {
+extension UserInfoViewController {
     
     
     private func setupViews() {
