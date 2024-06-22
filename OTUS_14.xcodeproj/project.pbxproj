@@ -15,6 +15,11 @@
 		6F4CA90A2BFE8D5900625DC9 /* YS Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F4CA9092BFE250900625DC9 /* YS Display-Medium.ttf */; };
 		6F4CA90D2BFF251600625DC9 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CA90C2BFF251600625DC9 /* UsersListViewController.swift */; };
 		6F4CA9112BFF288C00625DC9 /* UIColor extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CA9102BFF288C00625DC9 /* UIColor extension.swift */; };
+<<<<<<< Updated upstream
+=======
+		6F8EEAB72C2719370073BC3F /* UsersListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EEAB62C2719370073BC3F /* UsersListCell.swift */; };
+		6F8EEAB92C2719430073BC3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EEAB82C2719430073BC3F /* User.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		6F4CA9092BFE250900625DC9 /* YS Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Medium.ttf"; sourceTree = "<group>"; };
 		6F4CA90C2BFF251600625DC9 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
 		6F4CA9102BFF288C00625DC9 /* UIColor extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor extension.swift"; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		6F8EEAB62C2719370073BC3F /* UsersListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListCell.swift; sourceTree = "<group>"; };
+		6F8EEAB82C2719430073BC3F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,18 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
+=======
+		6F8EEAB52C27190E0073BC3F /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6F4CA8F62BFDEA5000625DC9 /* UserInfoViewController.swift */,
+				6F8EEAB82C2719430073BC3F /* User.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+>>>>>>> Stashed changes
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,6 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
+=======
+				6F8EEAB72C2719370073BC3F /* UsersListCell.swift in Sources */,
+				6F8EEAB92C2719430073BC3F /* User.swift in Sources */,
+>>>>>>> Stashed changes
 				6F4CA9112BFF288C00625DC9 /* UIColor extension.swift in Sources */,
 				6F4CA8F72BFDEA5000625DC9 /* UserInfoViewController.swift in Sources */,
 				6F4CA90D2BFF251600625DC9 /* UsersListViewController.swift in Sources */,
