@@ -62,7 +62,7 @@ final class UserInfoViewController: UIViewController {
         let element = UILabel()
         element.text = "Имя:"
         element.font = UIFont(name: "YSDisplay-Medium", size: 22)
-        element.textColor = .lightGray
+        element.textColor = .darkGray
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
     }()
@@ -71,7 +71,7 @@ final class UserInfoViewController: UIViewController {
         let element = UILabel()
         element.text = "Должность:"
         element.font = UIFont(name: "YSDisplay-Medium", size: 22)
-        element.textColor = .lightGray
+        element.textColor = .darkGray
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
     }()
@@ -80,7 +80,7 @@ final class UserInfoViewController: UIViewController {
         let element = UILabel()
         element.text = "Адрес:"
         element.font = UIFont(name: "YSDisplay-Medium", size: 22)
-        element.textColor = .lightGray
+        element.textColor = .darkGray
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
     }()
@@ -90,7 +90,7 @@ final class UserInfoViewController: UIViewController {
         let element = UILabel()
         element.text = "Волт Бой"
         element.font = UIFont(name: "YSDisplay-Medium", size: 22)
-        element.textColor = .white
+        element.textColor = .black
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
     }()
@@ -99,7 +99,7 @@ final class UserInfoViewController: UIViewController {
         let element = UILabel()
         element.text = "Маскот"
         element.font = UIFont(name: "YSDisplay-Medium", size: 22)
-        element.textColor = .white
+        element.textColor = .black
         element.isHidden = true
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
@@ -109,7 +109,7 @@ final class UserInfoViewController: UIViewController {
         let element = UILabel()
         element.text = "Штаб-квартира «Волт-Тек»"
         element.font = UIFont(name: "YSDisplay-Medium", size: 22)
-        element.textColor = .white
+        element.textColor = .black
         
         element.isHidden = true
         element.translatesAutoresizingMaskIntoConstraints = false
@@ -120,7 +120,7 @@ final class UserInfoViewController: UIViewController {
         let element = UIButton(type: .system)
         element.setTitle("Скопировать адрес", for: .normal)
         element.titleLabel?.font = UIFont(name: "YSDisplay-Medium", size: 16)
-        element.setTitleColor(.gray, for: .normal)
+        element.setTitleColor(.lightGray, for: .normal)
         element.addTarget(self, action: #selector(copyAddress), for: .touchUpInside)
         element.isHidden = true
         element.translatesAutoresizingMaskIntoConstraints = false
@@ -130,7 +130,7 @@ final class UserInfoViewController: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .bgColor
+        view.backgroundColor = .white
         setupViews()
         setupConstraints()
         initialHideDetails()
