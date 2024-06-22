@@ -15,6 +15,8 @@
 		6F4CA90A2BFE8D5900625DC9 /* YS Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F4CA9092BFE250900625DC9 /* YS Display-Medium.ttf */; };
 		6F4CA90D2BFF251600625DC9 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CA90C2BFF251600625DC9 /* UsersListViewController.swift */; };
 		6F4CA9112BFF288C00625DC9 /* UIColor extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CA9102BFF288C00625DC9 /* UIColor extension.swift */; };
+		6F8EEABB2C2737100073BC3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EEABA2C2737100073BC3F /* User.swift */; };
+		6F8EEABD2C27371F0073BC3F /* UsersListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EEABC2C27371F0073BC3F /* UsersListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		6F4CA9092BFE250900625DC9 /* YS Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Medium.ttf"; sourceTree = "<group>"; };
 		6F4CA90C2BFF251600625DC9 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
 		6F4CA9102BFF288C00625DC9 /* UIColor extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor extension.swift"; sourceTree = "<group>"; };
+		6F8EEABA2C2737100073BC3F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6F8EEABC2C27371F0073BC3F /* UsersListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 			children = (
 				6F4CA90C2BFF251600625DC9 /* UsersListViewController.swift */,
 				6F4CA8F62BFDEA5000625DC9 /* UserInfoViewController.swift */,
+				6F8EEABA2C2737100073BC3F /* User.swift */,
+				6F8EEABC2C27371F0073BC3F /* UsersListCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -177,7 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F4CA9112BFF288C00625DC9 /* UIColor extension.swift in Sources */,
+				6F8EEABD2C27371F0073BC3F /* UsersListCell.swift in Sources */,
 				6F4CA8F72BFDEA5000625DC9 /* UserInfoViewController.swift in Sources */,
+				6F8EEABB2C2737100073BC3F /* User.swift in Sources */,
 				6F4CA90D2BFF251600625DC9 /* UsersListViewController.swift in Sources */,
 				6F4CA8F32BFDEA5000625DC9 /* AppDelegate.swift in Sources */,
 				6F4CA8F52BFDEA5000625DC9 /* SceneDelegate.swift in Sources */,

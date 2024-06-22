@@ -13,8 +13,10 @@ final class UserInfoViewController: UIViewController {
     
     private lazy var userPhoto: UIImageView = {
         let element = UIImageView()
-        element.backgroundColor = .red
-        element.image = UIImage(named: "boy")
+        element.backgroundColor = .lightGray
+        element.tintColor = .darkGray
+        element.image = UIImage(systemName: "person.fill")
+        element.contentMode = .scaleAspectFill
         element.layer.masksToBounds = true
         element.layer.cornerRadius = 45
         element.layer.borderWidth = 2
@@ -51,7 +53,7 @@ final class UserInfoViewController: UIViewController {
     private lazy var infoButton: UIButton = {
         let element = UIButton(type: .system)
         element.setTitle("Раскрыть инфо", for: .normal)
-        element.tintColor = .green
+        element.tintColor = .systemIndigo
         element.addTarget(self, action: #selector(toggleInfo), for: .touchUpInside)
         element.titleLabel?.font = UIFont(name: "YSDisplay-Medium", size: 18)
         element.translatesAutoresizingMaskIntoConstraints = false
@@ -88,7 +90,7 @@ final class UserInfoViewController: UIViewController {
     
     private lazy var nameLabel: UILabel = {
         let element = UILabel()
-        element.text = "Волт Бой"
+        element.text = ""
         element.font = UIFont(name: "YSDisplay-Medium", size: 22)
         element.textColor = .black
         element.translatesAutoresizingMaskIntoConstraints = false
@@ -97,7 +99,7 @@ final class UserInfoViewController: UIViewController {
     
     private lazy var fullPositionLabel: UILabel = {
         let element = UILabel()
-        element.text = "Маскот"
+        element.text = ""
         element.font = UIFont(name: "YSDisplay-Medium", size: 22)
         element.textColor = .black
         element.isHidden = true
@@ -107,10 +109,9 @@ final class UserInfoViewController: UIViewController {
     
     private lazy var fullAddressLabel: UILabel = {
         let element = UILabel()
-        element.text = "Штаб-квартира «Волт-Тек»"
+        element.text = ""
         element.font = UIFont(name: "YSDisplay-Medium", size: 22)
         element.textColor = .black
-        
         element.isHidden = true
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
@@ -134,6 +135,7 @@ final class UserInfoViewController: UIViewController {
         setupViews()
         setupConstraints()
         initialHideDetails()
+        backButton()
     }
     
     private func initialHideDetails() {
@@ -146,11 +148,11 @@ final class UserInfoViewController: UIViewController {
     @objc private func toggleInfo() {
         let showingDetails = infoButton.tintColor == .red
         
-        infoButton.tintColor = showingDetails ? .green : .red
+        infoButton.tintColor = showingDetails ? .systemIndigo : .red
         infoButton.setTitle(showingDetails ? "Раскрыть инфо" : "Скрыть инфо", for: .normal)
         
         let shouldShowDetails = !showingDetails
-        nameLabel.text = shouldShowDetails ? "Волт Бой" : "В. Бой"
+        nameLabel.text = shouldShowDetails ? user.getFullName() : user.getShortName()
         
         positionStackView.isHidden = !shouldShowDetails
         fullPositionLabel.isHidden = !shouldShowDetails
@@ -163,14 +165,29 @@ final class UserInfoViewController: UIViewController {
     @objc private func copyAddress() {
         UIPasteboard.general.string = fullAddressLabel.text
     }
+    
+    
+    // MARK: - Configure
+    private var user: User!
+    
+    func configure(with user: User) {
+        self.user = user
+        userPhoto.image = user.userPhoto
+        nameLabel.text = user.getShortName()
+        fullPositionLabel.text = user.userPosition
+        fullAddressLabel.text = user.userAddress
+    }
+    func backButton() {
+        let backButton = UIBarButtonItem()
+        backButton.title = "Назад"
+        backButton.tintColor = .darkGray
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+    }
 }
-
 
 // MARK: - Setup
 
-
 extension UserInfoViewController {
-    
     
     private func setupViews() {
         view.addSubview(mainStackView)
@@ -185,7 +202,6 @@ extension UserInfoViewController {
         mainStackView.addArrangedSubview(copyAddressButton)
     }
     
-    
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             mainStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -197,4 +213,3 @@ extension UserInfoViewController {
         ])
     }
 }
-
